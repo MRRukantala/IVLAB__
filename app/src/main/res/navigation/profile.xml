@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile"
+    app:startDestination="@id/profilFragment">
+
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.project.ivlab.profil.ProfilFragment"
+        android:label="ProfilFragment"
+        tools:layout="@layout/fragment_profil">
+        <action
+            android:id="@+id/action_profilFragment_to_myProductFragment"
+            app:destination="@id/myProductFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_profilFragment_to_navigation"
+            app:destination="@id/navigation"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_profilFragment_to_detailMyCourse"
+            app:destination="@id/detailMyCourse" />
+        <action
+            android:id="@+id/action_profilFragment_to_mySharingFragment"
+            app:destination="@id/mySharingFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_profilFragment_to_myLaunchingFragment"
+            app:destination="@id/myLaunchingFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/myProductFragment"
+        android:name="com.project.ivlab.profil.MyProductFragment"
+        android:label="MyProductFragment"
+        tools:layout="@layout/fragment_my_product" />
+
+    <include app:graph="@navigation/navigation" />
+    <fragment
+        android:id="@+id/detailMyCourse"
+        android:name="com.project.ivlab.profil.myCourse.detailmycourse.DetailMyCourse"
+        android:label="DetailMyCourse"
+        tools:layout="@layout/fragment_detail_my_course">
+        <argument
+            android:name="selectedMyCourse"
+            app:argType="com.project.ivlab.course.CourseProperty" />
+    </fragment>
+    <fragment
+        android:id="@+id/mySharingFragment"
+        android:name="com.project.ivlab.profil.sharing.MySharingFragment"
+        android:label="MySharingFragment"
+        tools:layout="@layout/fragment_my_sharing" />
+    <fragment
+        android:id="@+id/myLaunchingFragment"
+        android:name="com.project.ivlab.profil.launching.MyLaunchingFragment"
+        android:label="MyLaunchingFragment"
+        tools:layout="@layout/fragment_my_launching" />
+</navigation>

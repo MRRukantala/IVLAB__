@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/match_parent">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_sharing"
+            style="@style/matchWidth_wrapHeight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerMySharing"
+            style="@style/matchWidht_0dpHeight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_layout_sharing" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

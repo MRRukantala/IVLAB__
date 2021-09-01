@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "545237287922",
+    "project_id": "iv-lab-project",
+    "storage_bucket": "iv-lab-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545237287922:android:6a710ede50bf646726e16b",
+        "android_client_info": {
+          "package_name": "com.project.ivlab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545237287922-ec6am1ikf32ip8m2iojrbnro3nl4coon.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.ivlab",
+            "certificate_hash": "dd78537d5c2ee573fb64270646bcd749ca75ede9"
+          }
+        },
+        {
+          "client_id": "545237287922-sdmdidgif2evk4tlvb7lhrlbn36t9qjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ff3dSaoIoRACekfo295TairAnnht2F0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545237287922-sdmdidgif2evk4tlvb7lhrlbn36t9qjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

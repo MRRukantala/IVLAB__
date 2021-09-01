@@ -1,0 +1,59 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/match_parent.background_blue"
+        tools:context=".onboard.OnBoardFragment">
+
+        <ImageView
+            android:id="@+id/first_onboarding_image"
+            style="@style/wrap_content.image_onboarding"
+            android:src="@drawable/image_on_boarding_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/first_onboarding_title"
+            style="@style/wrap_content.semua_text.text_title"
+            android:text="@string/on_board_1_title"
+            app:layout_constraintEnd_toEndOf="@+id/first_onboarding_image"
+            app:layout_constraintStart_toStartOf="@+id/first_onboarding_image"
+            app:layout_constraintTop_toBottomOf="@+id/first_onboarding_image" />
+
+        <TextView
+            android:id="@+id/first_onboarding_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito"
+            android:text="@string/first_splash_screen_description"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/first_onboarding_title"
+            style="@style/sub_title" />
+
+        <com.project.ivlab.CustomButton
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_orange_button"
+            android:fontFamily="@font/nunito"
+            android:text="@string/selanjutnya"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_onboarding_text"
+            app:layout_constraintVertical_bias="0.3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.IVLAB" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/blue_button</item>
+        <item name="colorOnPrimary">@color/orange_button</item>
+        <item name="searchViewStyle">@style/searchViewStyle</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+
+    </style>
+
+    <style name="searchViewStyle" parent="Widget.AppCompat.SearchView">
+
+        <item name="color">?attr/colorSurface</item>
+        <item name="itemTextAppearanceInactive">?attr/colorOnSurface</item>
+        <item name="itemTextAppearanceActive">?attr/colorPrimary</item>
+
+    </style>
+
+    <style name="BottomNavigationNightMode" parent="Widget.MaterialComponents.BottomAppBar.PrimarySurface">
+
+        <item name="color">?attr/colorSurface</item>
+        <item name="itemTextAppearanceInactive">?attr/colorOnSurface</item>
+        <item name="itemTextAppearanceActive">?attr/colorPrimary</item>
+
+    </style>
+</resources>

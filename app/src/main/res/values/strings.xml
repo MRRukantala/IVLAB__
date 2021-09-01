@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IVLAB</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="on_board_1_title">Product Launching</string>
+    <string name="on_board_1_description">Dalam IV Lab akan dilaksanaan \n pengupgradean branding pada tiap \n produk dari BUMDes</string>
+    <string name="on_board_1_text_button">Selanjutnya</string>
+
+    <string name="on_board_2_title">Product Branding</string>
+    <string name="on_board_2_description">Dalam IV Lab akan dilaksanaan \n pelatihan pengembangan produk \n hingga siap launching dan layak dalam pasar</string>
+    <string name="on_board_2_text_button">Selesai</string>
+
+    <string name="text_splash_screen_description">Selamat Datang di IVLAB \n Platform Inkubasi dan Tempat \n Memperuat Insight Bisnis \n Bagi BUMDes</string>
+    <string name="profil_name">BUMDes Karangbesuki</string>
+    <string name="first_splash_screen_description">Dalam IV Lab akan dilaksanaan \n pengupgradean branding pada tiap \n produk dari BUMDes</string>
+    <string name="selanjutnya">Selanjutnya</string>
+    <string name="selesai">Selesai</string>
+    <string name="login">Login</string>
+    <string name="masuk_ke_akun_anda_nuntuk_memulai_naktivitas_di_ivlab">Masuk ke akun anda \nuntuk memulai \naktivitas di IVLAB</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="buat_akun">Buat Akun</string>
+    <string name="masuk">masuk</string>
+    <string name="td">image_description</string>
+    <string name="innovation_n_through_the_limit">Innovation \n Through The Limit</string>
+    <string name="temukan_referensi_dan_insight_disini">“Temukan Referensi dan Insight Disini“</string>
+    <string name="cari_produk_atau_pelatihan">Cari Produk atau Pelatihan</string>
+    <string name="pelatihan">Pelatihan</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="kategori_produk">Kategori Produk</string>
+    <string name="cd">cd</string>
+    <string name="title_course_item">Pelatihan Digital Marketing dan Digital Branding</string>
+    <string name="kategori">Kategori</string>
+    <string name="filter">Filter</string>
+    <string name="membuat_design_packaging_yang_menarik">Membuat Design Packaging Yang Menarik</string>
+    <string name="ivlab_team">IVLab Team</string>
+    <string name="_56_enrolled">56 Enrolled</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="robusta_adalah_salah_satu_jenis_tanaman_kopi_dengan_nama_ilmiah_coffea_canephora_nama_robusta_diambil_dari_kata_robust_istilah_dalam_bahasa_inggris_yang_artinya_kuat_sesuai_dengan_namanya_minuman_yang_diekstrak_dari_biji_kopi_robusta_memiliki_cita_rasa_yang_kuat_dan_cenderung_lebih_pahit_dibanding_arabika">Robusta adalah salah satu jenis tanaman kopi dengan nama ilmiah Coffea canephora. Nama robusta diambil dari kata “robust“, istilah dalam bahasa Inggris yang artinya kuat. Sesuai dengan namanya, minuman yang diekstrak dari biji kopi robusta memiliki cita rasa yang kuat dan cenderung lebih pahit dibanding arabika.</string>
+    <string name="materi_pelatihan">Materi Pelatihan</string>
+    <string name="enroll_pelatihan_ini">Enroll Pelatihan ini</string>
+    <string name="product">Product</string>
+    <string name="my_product">Produk Saya </string>
+    <string name="kopi_robusta_dampit">Kopi Robusta Dampit</string>
+    <string name="pelatihan_pada_produk_ini">Pelatihan pada Produk ini</string>
+    <string name="pesan_produk_ini">Pesan Produk Ini</string>
+    <string name="home_navbar_menu">Home</string>
+    <string name="kursus_navbar_menu">Kursus</string>
+    <string name="product_navbar_menu">Produk</string>
+    <string name="profil_navbar_menu">Profil</string>
+    <string name="malang_jawa_timur">Malang, Jawa Timur</string>
+    <string name="sharing">Sharing</string>
+    <string name="mentoring">Mentoring</string>
+    <string name="launching">Launching</string>
+    <string name="bio_bumdes">Bio BUMDes</string>
+    <string name="ketua_bumdes">Ketua BUMDes</string>
+    <string name="_titik_dua">:</string>
+    <string name="rma_robusta_diambil_dari_kata_robust_istilah_dalam_bahasa_inggris_yang_artinya_kuat_sesuai_dengan_namanya_minuman_yang_diekstrak_dari_biji_kopi_robusta_memiliki_cita_rasa_yang_kuat_dan_cenderung_lebih_pahit_dibanding_arabika">Rma robusta diambil dari kata “robust“, istilah dalam bahasa Inggris yang artinya kuat. Sesuai dengan namanya, minuman yang diekstrak dari biji kopi robusta memiliki cita rasa yang kuat dan cenderung lebih pahit dibanding arabika.</string>
+    <string name="yesiaha_ihda">Yesiaha Ihda</string>
+    <string name="alamat">Alamat</string>
+    <string name="alamat_jl">Jl Mandalawangi No 9 Karangbesuki, Malang</string>
+    <string name="pelatihan_yang_diikuti">Pelatihan yang diikuti</string>
+    <string name="add_prodcut">Tambah Produk</string>
+    <string name="pendaftaran">Pendaftaran</string>
+    <string name="buat_akun_ivlab_anda">Buat akun IVLab Anda</string>
+    <string name="nama_bumdes">Nama BUMDes</string>
+    <string name="password_confirm">Password Confirmation</string>
+    <string name="nama_desa">Nama Desa</string>
+    <string name="kecamatan">Kecamatan</string>
+    <string name="kabupaten">Kabupaten</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="email">Email</string>
+    <string name="keluar">Keluar</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="makanan">Makanan</string>
+    <string name="cari_produk">Cari Produk</string>
+    <string name="cari_pelatihan">Cari Pelatihan</string>
+
+</resources>

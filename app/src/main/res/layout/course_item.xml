@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="course"
+            type="com.project.ivlab.course.CourseProperty" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingEnd="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="340dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/cd"
+                android:scaleType="centerCrop"
+                app:imageUrlCourse="@{course.fotoCover}"
+                tools:src="@drawable/dummy_photo_course" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito"
+            android:maxLines="2"
+            android:text="@{course.nama_pelatihan}"
+            android:textColor="@color/text_title_course"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4"
+            tools:ignore="RtlSymmetry"
+            tools:text="@string/title_course_item" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/nunito"
+            android:text="@{course.mentor}"
+            android:textColor="@color/text_sub_title"
+            app:drawableLeftCompat="@drawable/ic_baseline_person_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            tools:text="IVLab Team" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/text_sub_title"
+            app:drawableLeftCompat="@drawable/ic_baseline_bookmarks_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            tools:text="50 Telah dienroll" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/text_sub_title"
+            app:drawableLeftCompat="@drawable/ic_baseline_videocam_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            tools:text="50 Video" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

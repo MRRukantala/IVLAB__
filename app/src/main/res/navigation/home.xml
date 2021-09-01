@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.project.ivlab.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_course"
+            app:destination="@id/course" />
+        <action
+            android:id="@+id/action_homeFragment_to_resultSearchCourseFragment"
+
+            app:destination="@id/resultSearchCourseFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+
+    <include app:graph="@navigation/course" />
+    <fragment
+
+        tools:layout="@layout/fragment_result_search_home"
+        android:id="@+id/resultSearchCourseFragment"
+        android:name="com.project.ivlab.home.search.ResultSearchHomeFragment"
+        android:label="ResultSearchCourseFragment">
+
+        <argument
+            android:name="key"
+            app:argType="string"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_resultSearchCourseFragment_to_detailProductFragment2"
+            app:destination="@id/detailProductFragment2" />
+        <action
+            android:id="@+id/action_resultSearchCourseFragment_to_detailCourseFragment2"
+            app:destination="@id/detailCourseFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailCourseFragment2"
+        android:name="com.project.ivlab.course.DetailCourseFragment"
+        android:label="DetailCourseFragment" >
+        <argument
+            android:name="selectedCourse"
+            app:argType="com.project.ivlab.course.CourseProperty" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailProductFragment2"
+        android:name="com.project.ivlab.product.DetailProductFragment"
+        android:label="DetailProductFragment" >
+        <argument
+            android:name="selectedProduct"
+            app:argType="com.project.ivlab.product.ProdukProperty" />
+    </fragment>
+</navigation>

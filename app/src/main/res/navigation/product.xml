@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product"
+    app:startDestination="@id/productFragment">
+
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.project.ivlab.product.ProductFragment"
+        android:label="ProductFragment"
+        tools:layout="@layout/fragment_product">
+        <action
+            android:id="@+id/action_productFragment_to_detailProductFragment"
+            app:destination="@id/detailProductFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailProductFragment"
+        android:name="com.project.ivlab.product.DetailProductFragment"
+        android:label="DetailProductFragment"
+        tools:layout="@layout/fragment_detail_product" >
+        <argument
+            android:name="selectedProduct"
+            app:argType="com.project.ivlab.product.ProdukProperty" />
+    </fragment>
+</navigation>

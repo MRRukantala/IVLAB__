@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="detailProductViewModel"
+            type="com.project.ivlab.product.DetailProductViewModel" />
+
+        <variable
+            name="courseTerkaitViewModel"
+            type="com.project.ivlab.product.materiterkait.MTViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:context=".product.DetailProductFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="100dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    imageUrl="@{detailProductViewModel.selectedProperty.fotoProduk}"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:contentDescription="@string/cd"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/dummy_photo_product" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/nunito"
+                    android:maxLines="2"
+                    android:text="@{detailProductViewModel.selectedProperty.nama_produk}"
+                    android:textColor="@color/text_title"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView8"
+                    tools:text="@string/kopi_robusta_dampit" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawablePadding="6dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="@{detailProductViewModel.selectedProperty.nama_bumdes}"
+                    android:textColor="@color/text_sub_title"
+                    app:drawableLeftCompat="@drawable/ic_baseline_person_24"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16"
+                    tools:text="@string/ivlab_team" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nunito"
+                        android:text="@string/deskripsi"
+                        android:textColor="@color/text_sub_title"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nunito"
+                        android:justificationMode="inter_word"
+                        android:text="@{detailProductViewModel.selectedProperty.deskripsi_produk}"
+                        android:textColor="@color/text_description"
+                        app:layout_constraintTop_toBottomOf="@+id/textView8"
+                        tools:targetApi="o"
+                        tools:text="@string/robusta_adalah_salah_satu_jenis_tanaman_kopi_dengan_nama_ilmiah_coffea_canephora_nama_robusta_diambil_dari_kata_robust_istilah_dalam_bahasa_inggris_yang_artinya_kuat_sesuai_dengan_namanya_minuman_yang_diekstrak_dari_biji_kopi_robusta_memiliki_cita_rasa_yang_kuat_dan_cenderung_lebih_pahit_dibanding_arabika" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/nunito"
+                        android:text="@string/pelatihan_pada_produk_ini"
+                        android:textColor="@color/text_sub_title"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/materi_terkait_recycler_view"
+                    listDataCourse="@{courseTerkaitViewModel.properties}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="8dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/course_item" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.92">
+
+            <!-- sementara dihapus
+               <com.project.ivlab.CustomButton
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="24dp"
+                   android:layout_marginTop="8dp"
+                   android:layout_marginEnd="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:background="@drawable/background_blue_button"
+                   android:fontFamily="@font/nunito"
+                   android:text="@string/pesan_produk_ini"
+                   android:textColor="@android:color/white"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+   -->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

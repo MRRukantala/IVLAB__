@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.project.ivlab.splashscreen.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreenFragment_to_onBoardFragment"
+            app:destination="@id/onBoardFragment"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_berandaActivity"
+            app:destination="@id/berandaActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.project.ivlab.onboard.OnBoardFragment"
+        android:label="OnBoardFragment"
+        tools:layout="@layout/fragment_first_on_board">
+        <action
+            android:id="@+id/action_onBoardFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_onBoardFragment_to_loginFragment2"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/onBoardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.project.ivlab.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_berandaActivity"
+            app:destination="@id/berandaActivity"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_loginFragment_to_register1Fragment"
+            app:destination="@id/register1Fragment"
+            app:enterAnim="@android:anim/fade_out"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <activity
+        android:id="@+id/berandaActivity"
+        android:name="com.project.ivlab.berandaactivity.BerandaActivity"
+        android:label="BerandaActivity"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/register1Fragment"
+        android:name="com.project.ivlab.register.Register1Fragment"
+        android:label="fragment_register1"
+        tools:layout="@layout/fragment_register1">
+        <action
+            android:id="@+id/action_register1Fragment_to_regis2Fragment"
+            app:destination="@id/regis2Fragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/regis2Fragment"
+        android:name="com.project.ivlab.register.Regis2Fragment"
+        android:label="Regis2Fragment"
+        tools:layout="@layout/fragment_regis2">
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <argument
+            android:name="nama_bumdes"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_regis2Fragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/fade_out" />
+
+    </fragment>
+</navigation>

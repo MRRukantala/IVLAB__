@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/course"
+    app:startDestination="@id/courseFragment">
+
+    <fragment
+        android:id="@+id/courseFragment"
+        android:name="com.project.ivlab.course.CourseFragment"
+        android:label="CourseFragment"
+        tools:layout="@layout/fragment_course">
+        <action
+            android:id="@+id/action_courseFragment_to_detailCourseFragment"
+            app:destination="@id/detailCourseFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/courseFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailCourseFragment"
+        android:name="com.project.ivlab.course.DetailCourseFragment"
+        android:label="DetailCourseFragment"
+        tools:layout="@layout/fragment_detail_course">
+        <argument
+            android:name="selectedCourse"
+            app:argType="com.project.ivlab.course.CourseProperty" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_blue">#03192E</color>
+    <color name="orange_button">#FFAD48</color>
+    <color name="blue_button">#148DDC</color>
+    <color name="white_sedikit">#EFEFEF</color>
+
+    <color name="text_title">#626262</color>
+    <color name="text_title_course">#153A5C</color>
+    <color name="text_description">#000000</color>
+    <color name="text_sub_title">#4D4D4D</color>
+    <color name="colorText">#55536e</color>
+    <color name="grey">#E8E8E8</color>
+</resources>

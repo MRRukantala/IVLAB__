@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="match_parent"
+        tools:context=".splashscreen.SplashScreenFragment">
+
+        <ImageView
+            android:id="@+id/imageViewSplashScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_splash"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.19999999" />
+
+        <ImageView
+            android:id="@+id/imageViewLogoIvLabSplashScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo_2"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewSplashScreen"
+            app:layout_constraintStart_toStartOf="@+id/imageViewSplashScreen"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSplashScreen" />
+
+        <TextView
+            android:id="@+id/splash_screen_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:maxLines="4"
+            android:text="@string/text_splash_screen_description"
+            android:textAlignment="center"
+            android:textColor="@color/text_description"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLogoIvLabSplashScreen" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
